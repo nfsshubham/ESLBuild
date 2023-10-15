@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | ESL</title>
+    <title>Unity WebGL Player | ExtremeSneakList</title>
     <link rel="stylesheet" href="TemplateData/style.css">
 
     <style>
@@ -80,7 +80,7 @@
 
         });
     </script>
-    <script src="Build/ESLBuild.loader.js"></script>
+    <script src="Build/ESL_webGL.loader.js"></script>
     <script>
         var container = document.querySelector("#unity-container");
         var canvas = document.querySelector("#unity-canvas");
@@ -92,12 +92,12 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/ESLBuild.data",
-                    frameworkUrl: "Build/ESLBuild.framework.js",
-                    codeUrl: "Build/ESLBuild.wasm",
+                    dataUrl: "Build/ESL_webGL.data",
+                    frameworkUrl: "Build/ESL_webGL.framework.js",
+                    codeUrl: "Build/ESL_webGL.wasm",
                     streamingAssetsUrl: "StreamingAssets",
-                    companyName: "Streakbyte",
-                    productName: "ESL",
+                    companyName: "DefaultCompany",
+                    productName: "ExtremeSneakList",
                     productVersion: "1.0",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
