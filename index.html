@@ -80,7 +80,7 @@
 
         });
     </script>
-    <script src="Build/ESL.loader.js"></script>
+    <script src="Build/ESLBuild.loader.js"></script>
     <script>
         var container = document.querySelector("#unity-container");
         var canvas = document.querySelector("#unity-canvas");
@@ -92,9 +92,9 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/ESL.data",
-                    frameworkUrl: "Build/ESL.framework.js",
-                    codeUrl: "Build/ESL.wasm",
+                    dataUrl: "Build/ESLBuild.data",
+                    frameworkUrl: "Build/ESLBuild.framework.js",
+                    codeUrl: "Build/ESLBuild.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "Streakbyte",
                     productName: "ESL",
